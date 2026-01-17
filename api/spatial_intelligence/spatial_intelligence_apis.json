@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Google Maps Distance Matrix API",
+    "description": "计算多个起点和终点之间的距离和时间",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "Spatial Intelligence",
+    "url": "https://developers.google.com/maps/documentation/distance-matrix/",
+    "comment": "用于计算距离矩阵，适用于路径优化等应用"
+  },
+  {
+    "name": "OpenRouteService",
+    "description": "开源路由服务，提供路径规划和空间分析",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "Spatial Intelligence",
+    "url": "https://openrouteservice.org/",
+    "comment": "基于OpenStreetMap数据的开源路由服务"
+  },
+  {
+    "name": "Geoapify",
+    "description": "提供地理空间API和地图组件",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "Spatial Intelligence",
+    "url": "https://www.geoapify.com/api/geocoding-api/",
+    "comment": "提供地理编码、路径规划、地点搜索等服务"
+  },
+  {
+    "name": "LocationIQ",
+    "description": "提供地理编码、路径规划和地图服务",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "Spatial Intelligence",
+    "url": "https://locationiq.com/",
+    "comment": "基于OpenStreetMap的地理空间API服务"
+  },
+  {
+    "name": "GraphHopper",
+    "description": "提供路径规划和地理编码服务",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "Spatial Intelligence",
+    "url": "https://www.graphhopper.com/products/routing-api/",
+    "comment": "提供快速准确的路径规划算法"
+  },
+  {
+    "name": "高德地图路径规划API",
+    "description": "一套以HTTP形式提供的步行、公交、驾车查询及行驶距离计算接口，包含步行、公交、驾车、骑行路径规划及距离测量功能",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "unknown",
+    "category": "Spatial Intelligence",
+    "url": "https://lbs.amap.com/api/webservice/guide/api/direction",
+    "comment": "支持多种路径规划类型，适用于无需展现地图的线路查询场景"
+  },
+  {
+    "name": "百度地图路径规划API",
+    "description": "提供多种出行方式的路线计算能力，支持驾车、步行、骑行、公交等多种交通方式的路线规划，包含精细的路网和道路动态数据",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "Spatial Intelligence",
+    "url": "https://lbs.baidu.com/products/direction",
+    "comment": "支持国内外多个国家和地区，提供摩托车、货车、电动车等多种特殊车辆路线规划"
+  },
+  {
+    "name": "腾讯地图路径规划API",
+    "description": "提供多种交通方式的路线计算能力，包括驾车、步行、骑行、电动车、公交和新能源汽车路线规划，支持实时路况、多种路线偏好设置、途经点、避让区域等功能",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "unknown",
+    "category": "Spatial Intelligence",
+    "url": "https://lbs.qq.com/service/webService/webServiceGuide/webServiceRoute",
+    "comment": "驾车路线支持实时路况、少收费、不走高速等偏好，公交路线支持少换乘、少步行等偏好"
+  }
+]

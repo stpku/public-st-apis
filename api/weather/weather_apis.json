@@ -1,0 +1,82 @@
+[
+  {
+    "name": "OpenWeatherMap",
+    "description": "提供全球天气数据和预报服务",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "Weather APIs",
+    "url": "https://openweathermap.org/api",
+    "comment": "提供实时天气、预报、历史数据等多种服务"
+  },
+  {
+    "name": "WeatherAPI",
+    "description": "提供天气预报、历史天气和气象数据",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "Weather APIs",
+    "url": "https://www.weatherapi.com/",
+    "comment": "提供当前天气、预报、历史等多种天气数据"
+  },
+  {
+    "name": "AccuWeather",
+    "description": "提供精确的天气预报和天气数据",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "unknown",
+    "category": "Weather APIs",
+    "url": "https://developer.accuweather.com/",
+    "comment": "提供分钟级天气预报等高级功能"
+  },
+  {
+    "name": "Tomorrow.io",
+    "description": "提供天气API和气候洞察服务",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "Weather APIs",
+    "url": "https://docs.tomorrow.io/",
+    "comment": "提供超本地化天气数据和预测"
+  },
+  {
+    "name": "Visual Crossing Weather",
+    "description": "提供简单易用的天气和历史气候数据API",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "Weather APIs",
+    "url": "https://www.visualcrossing.com/weather-api",
+    "comment": "提供全球天气数据，包括预报和历史数据"
+  },
+  {
+    "name": "心知天气API",
+    "description": "提供企业级高精度气象数据服务，具有公里级精度、分钟级更新、AI增强准确性、多数据源融合等特点，提供实况和预报数据，覆盖全国每个角落",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "unknown",
+    "category": "Weather APIs",
+    "url": "https://www.seniverse.com/",
+    "comment": "服务于新能源、电力、农业、交通等多个行业，提供定制化解决方案"
+  },
+  {
+    "name": "彩云天气API",
+    "description": "提供全球天气数据，包括城市和经纬度两种调用方式，空气质量数据（如PM2.5、AQI），天气预报（15天逐天逐小时预报），实况天气（每1分钟更新一次），以及分钟级降水预报专利（未来两小时分钟级预报）",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "unknown",
+    "category": "Weather APIs",
+    "url": "https://caiyunapp.com/api-document/",
+    "comment": "提供分钟级降水预报专利技术，支持未来两小时分钟级预报"
+  },
+  {
+    "name": "和风天气API",
+    "description": "基于先进的气象和人工智能算法，提供强大、丰富的天气数据服务，帮助在应用中展示天气或助力业务决策",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "unknown",
+    "category": "Weather APIs",
+    "url": "https://dev.qweather.com/",
+    "comment": "支持API Key和JWT身份认证，提供全球部署能力和按量计费模式"
+  }
+]

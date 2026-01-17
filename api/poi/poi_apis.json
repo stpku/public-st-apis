@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Google Places API",
+    "description": "Google提供的地点搜索和地点详情服务",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "POI Queries",
+    "url": "https://developers.google.com/places/web-service/",
+    "comment": "提供地点搜索、详情、照片等多种POI相关服务"
+  },
+  {
+    "name": "Foursquare Places API",
+    "description": "Foursquare提供的地点数据和发现服务",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "POI Queries",
+    "url": "https://developer.foursquare.com/",
+    "comment": "包含大量POI数据和场所发现功能"
+  },
+  {
+    "name": "OpenStreetMap Nominatim",
+    "description": "OpenStreetMap的地理编码服务",
+    "auth": null,
+    "https": true,
+    "cors": "yes",
+    "category": "POI Queries",
+    "url": "https://nominatim.org/",
+    "comment": "免费的地理编码和反向地理编码服务"
+  },
+  {
+    "name": "Mapbox Geocoding",
+    "description": "Mapbox提供的地理编码和反向地理编码服务",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "POI Queries",
+    "url": "https://docs.mapbox.com/api/search/geocoding/",
+    "comment": "提供正向和反向地理编码服务"
+  },
+  {
+    "name": "HERE Geocoding & Search",
+    "description": "HERE Technologies提供的地理编码和搜索服务",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "POI Queries",
+    "url": "https://developer.here.com/documentation/geocoding-search-api/",
+    "comment": "提供全球范围的地理编码和地点搜索服务"
+  },
+  {
+    "name": "高德地图POI API",
+    "description": "提供多种查询POI信息的能力，包括关键字搜索、周边搜索、多边形搜索、ID查询四种筛选机制，支持返回扩展信息如附近POI、道路等详细信息",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "unknown",
+    "category": "POI Queries",
+    "url": "https://lbs.amap.com/api/webservice/guide/api/search",
+    "comment": "每页记录数据建议不超过25条，同请求参数翻页查询最多支持获取200条数据"
+  },
+  {
+    "name": "百度地图POI API",
+    "description": "用于检索地理位置信息的API，支持多种搜索模式如周边搜索、区域搜索、关键词搜索等，提供丰富的地点信息包括名称、坐标、地址等",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "POI Queries",
+    "url": "https://lbsyun.baidu.com/index.php?title=webapi/guide/placeapi",
+    "comment": "需要在百度地图开放平台注册账号并创建应用获取AK密钥，提供多种检索方式"
+  },
+  {
+    "name": "腾讯地图POI API",
+    "description": "提供多种POI检索方式，包括周边圆形范围搜索、城市/区域搜索、矩形范围搜索、多边形范围搜索、AOI边界搜索、危险地点搜索等",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "unknown",
+    "category": "POI Queries",
+    "url": "https://lbs.qq.com/service/webService/webServiceGuide/webServicePlace",
+    "comment": "支持Web、小程序、Native APP等多平台开发，需要申请密钥使用"
+  }
+]

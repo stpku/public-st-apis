@@ -1,0 +1,82 @@
+[
+  {
+    "name": "OpenStreetMap Tiles",
+    "description": "OpenStreetMap提供的免费地图瓦片服务",
+    "auth": null,
+    "https": true,
+    "cors": "yes",
+    "category": "Mapping Services",
+    "url": "https://wiki.openstreetmap.org/wiki/Tiles",
+    "comment": "有使用限制，请遵守OSM瓦片使用政策"
+  },
+  {
+    "name": "Google Maps Platform",
+    "description": "Google提供的地图和地理服务套件",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "Mapping Services",
+    "url": "https://developers.google.com/maps/documentation",
+    "comment": "提供地图、路线、地点等多种服务，有免费层级"
+  },
+  {
+    "name": "Mapbox",
+    "description": "可定制的地图服务和地理应用开发平台",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "Mapping Services",
+    "url": "https://docs.mapbox.com/api/",
+    "comment": "提供丰富的地图样式和地理空间服务"
+  },
+  {
+    "name": "Stadia Maps",
+    "description": "高质量地图瓦片服务，注重隐私保护",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "Mapping Services",
+    "url": "https://docs.stadiamaps.com/",
+    "comment": "注重隐私保护的地图服务提供商"
+  },
+  {
+    "name": "Thunderforest",
+    "description": "英国地图瓦片服务，提供多种地图样式",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "Mapping Services",
+    "url": "https://www.thunderforest.com/docs/api/",
+    "comment": "提供多种独特的地图样式"
+  },
+  {
+    "name": "高德地图 JS API",
+    "description": "一套JavaScript语言开发的地图应用编程接口，支持移动端和PC端，提供2D和3D地图模式，以及地图展示、自定义、图层加载、点标记、矢量图形绘制等功能，同时包含POI搜索、路线规划、地理编码、行政区查询、定位等服务",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "Mapping Services",
+    "url": "https://lbs.amap.com/api/javascript-api/summary",
+    "comment": "非商业用途可免费使用，商业用途需获取商用授权"
+  },
+  {
+    "name": "百度地图 JS API",
+    "description": "提供地图显示、定位、导航、轨迹管理、位置搜索、路线规划等功能，支持数据可视化、全景地图、卫星地图、个性化地图定制，面向Web、移动端(HarmonyOS/Android/iOS)、小程序等多平台",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "Mapping Services",
+    "url": "https://lbsyun.baidu.com/",
+    "comment": "需要注册百度账号并创建应用获取AK密钥才能使用"
+  },
+  {
+    "name": "腾讯地图 JS API",
+    "description": "腾讯地图开放平台为各类应用厂商和开发者提供基于腾讯地图的地理位置服务和解决方案，包括Web应用的JavaScript API, 适合手机端Native APP的各种SDK, WebService接口",
+    "auth": "apiKey",
+    "https": true,
+    "cors": "yes",
+    "category": "Mapping Services",
+    "url": "https://lbs.qq.com/",
+    "comment": "需要申请密钥才能使用，有针对小程序的专门支持"
+  }
+]
