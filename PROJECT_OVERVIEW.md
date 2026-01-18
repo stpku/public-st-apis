@@ -65,6 +65,142 @@ python utils/search_apis.py
 python utils/validate_apis.py
 ```
 
+## 使用示范
+
+### 1. 在Web应用中使用地图API
+
+以下是如何在网页中使用OpenStreetMap Tiles API的示例：
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>使用OpenStreetMap示例</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <div id="map" style="height: 400px;"></div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([39.9042, 116.4074], 13); // 北京坐标
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([39.9042, 116.4074]).addTo(map)
+            .bindPopup('北京')
+            .openPopup();
+    </script>
+</body>
+</html>
+```
+
+### 2. 使用天气API获取实时天气
+
+以下是如何使用OpenWeatherMap API获取实时天气数据的示例：
+
+```javascript
+// JavaScript示例
+const apiKey = 'YOUR_API_KEY';
+const city = 'Beijing';
+const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        console.log(`温度: ${data.main.temp}°C`);
+        console.log(`天气: ${data.weather[0].description}`);
+        console.log(`湿度: ${data.main.humidity}%`);
+    })
+    .catch(error => console.error('Error:', error));
+```
+
+### 3. 使用POI查询API
+
+以下是如何使用OpenStreetMap Nominatim API进行地理编码的示例：
+
+```python
+# Python示例
+import requests
+
+def geocode_address(address):
+    url = "https://nominatim.openstreetmap.org/search"
+    params = {
+        'q': address,
+        'format': 'json',
+        'limit': 1
+    }
+
+    response = requests.get(url, params=params)
+    if response.status_code == 200:
+        data = response.json()
+        if data:
+            return {
+                'lat': float(data[0]['lat']),
+                'lon': float(data[0]['lon']),
+                'display_name': data[0]['display_name']
+            }
+    return None
+
+# 使用示例
+location = geocode_address("北京市天安门广场")
+print(location)
+```
+
+### 4. 使用空间智能API进行路径规划
+
+以下是如何使用OpenRouteService API进行路径规划的示例：
+
+```python
+# Python示例
+import requests
+
+def get_route(start_lon, start_lat, end_lon, end_lat, api_key):
+    url = "https://api.openrouteservice.org/v2/directions/driving-car"
+
+    headers = {
+        'Authorization': api_key,
+        'Content-Type': 'application/json'
+    }
+
+    body = {
+        "coordinates": [[start_lon, start_lat], [end_lon, end_lat]],
+        "format": "geojson"
+    }
+
+    response = requests.post(url, headers=headers, json=body)
+    if response.status_code == 200:
+        return response.json()
+    return None
+
+# 使用示例（需要有效的API密钥）
+# route = get_route(116.3972, 39.9075, 116.4074, 39.9042, 'YOUR_API_KEY')
+```
+
+### 5. 使用搜索工具查找API
+
+您可以使用项目提供的搜索工具来查找特定类型的API：
+
+```bash
+# 启动交互式搜索
+python utils/search_apis.py
+
+# 或者在代码中使用API数据
+import json
+
+# 读取地图服务API
+with open('api/mapping/mapping_apis.json', 'r', encoding='utf-8') as f:
+    mapping_apis = json.load(f)
+
+for api in mapping_apis:
+    print(f"API名称: {api['name']}")
+    print(f"描述: {api['description']}")
+    print(f"文档: {api['url']}")
+    print("---")
+```
+
 ## 扩展项目
 
 ### 添加新的API
